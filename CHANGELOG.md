@@ -1,5 +1,10 @@
 # Change Log
 
+## [1.1.0] - 2026-03-15
+
+### Added
+- **Narvo Dusk** — Fourth theme variant: near-black warm background (#14100C), amber accents (#FFBA4A), amber borders (#785834), warm gold text tiers. Derived from actual `[data-theme='dusk']` CSS in the Narvo News codebase.
+
 ## [1.0.0] - 2026-03-15
 
 ### Added
