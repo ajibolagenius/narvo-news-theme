@@ -1,0 +1,58 @@
+{
+  "name": "narvo-news-theme",
+  "displayName": "Narvo News Theme",
+  "description": "A Swiss-brutalist VS Code theme inspired by Narvo News — Africa's audio-first news platform. Three variants: Nature (forest/sand), Sun (parchment/green), Moon (navy/purple).",
+  "version": "1.0.0",
+  "publisher": "ajibolagenius",
+  "author": {
+    "name": "AJIBOLA DON_GENIUS"
+  },
+  "license": "MIT",
+  "icon": "images/icon.png",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "narvo",
+    "africa",
+    "swiss",
+    "brutalist",
+    "forest",
+    "dark theme",
+    "light theme",
+    "news",
+    "nature",
+    "moon",
+    "purple"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ajibolagenius/narvo-news-theme"
+  },
+  "contributes": {
+    "themes": [
+      {
+        "label": "Narvo Nature",
+        "uiTheme": "vs-dark",
+        "path": "./themes/narvo-nature.json"
+      },
+      {
+        "label": "Narvo Sun",
+        "uiTheme": "vs",
+        "path": "./themes/narvo-sun.json"
+      },
+      {
+        "label": "Narvo Moon",
+        "uiTheme": "vs-dark",
+        "path": "./themes/narvo-moon.json"
+      }
+    ]
+  },
+  "galleryBanner": {
+    "color": "#1B211A",
+    "theme": "dark"
+  }
+}
