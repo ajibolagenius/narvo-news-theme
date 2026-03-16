@@ -1,66 +1,80 @@
 # Narvo News Theme for VS Code
 
-A Swiss-brutalist VS Code theme derived from the **Narvo News** design system — Africa's audio-first news platform. Sharp edges, mono-UI typography, and three distinctive palettes.
+A Swiss-brutalist VS Code theme derived from the **[Narvo News](https://github.com/ajibolagenius/narvo_news)** design system — Africa's audio-first news platform. Four distinctive palettes built on sharp edges, mono-UI typography, and an 8pt spacing grid.
 
 ![Narvo Theme Preview](images/preview.png)
 
-## Four Variants
+---
 
-### Narvo Nature (default)
-Deep matte forest (`#1B211A`) with sand/beige accents (`#EBD5AB`) and sage green syntax. The signature Narvo experience — like coding in a moonlit forest.
+## Variants
 
-### Narvo Sun
-Warm parchment background (`#FCF6F0`) with deep green accents (`#166534`). Clean, readable, and distinctly editorial — like a Swiss-designed broadsheet.
+**Narvo Nature** — Deep matte forest (`#1B211A`) with sand/beige accents (`#EBD5AB`) and sage green syntax. The default Narvo experience.
 
-### Narvo Moon
-Deep navy void (`#0B0C14`) with soft purple accents (`#9B8DFF`). Vite-inspired, electric, and perfect for late-night deep work.
+**Narvo Sun** — Warm parchment (`#FCF6F0`) with deep green accents (`#166534`). Clean, readable, and distinctly editorial.
 
-### Narvo Dusk
-Near-black warmth (`#14100C`) with amber accents (`#FFBA4A`). The firelight theme — rich amber borders (`#785834`) and warm gold text tiers. Like coding by a campfire at golden hour.
+**Narvo Dusk** — Near-black warmth (`#14100C`) with amber accents (`#FFBA4A`) and rich amber borders (`#785834`). The firelight theme.
+
+**Narvo Moon** — Deep navy void (`#0B0C14`) with soft purple accents (`#9B8DFF`). Electric and Vite-inspired.
 
 ---
 
-## Design System Origin
+## Design System
 
-Every color maps directly to the Narvo Design System's semantic tokens:
+Every color is pulled directly from the Narvo News CSS custom properties (`--color-bg`, `--color-surface`, `--color-border`, `--color-primary`, etc.) across all four `[data-theme]` definitions.
 
-| Role | Nature | Sun | Moon | Dusk |
+| Role | Nature | Sun | Dusk | Moon |
 |------|--------|-----|------|------|
-| **Background** | `#1B211A` Forest | `#FCF6F0` Parchment | `#0B0C14` Navy | `#14100C` Warm Black |
-| **Surface** | `#242B23` | `#F5F0E8` | `#1A1D2E` | `#1E1812` |
-| **Border** | `#628141` Forest Green | `#646260` Warm Gray | `#2A2D3A` Slate | `#785834` Amber |
-| **Accent** | `#EBD5AB` Sand | `#166534` Green-800 | `#9B8DFF` Purple | `#FFBA4A` Amber |
-| **Keywords** | Sand `#EBD5AB` | Green `#166534` | Purple `#9B8DFF` | Amber `#FFBA4A` |
-| **Functions** | Sage `#8BAE66` | Blue `#1E64B4` | Blue `#93C5FD` | Blue `#93C5FD` |
-| **Strings** | Health `#4ADE80` | Green `#15803D` | Green `#4ADE80` | Green `#4ADE80` |
-| **Types** | Tech `#D8B4FE` | Purple `#7E3EBE` | Purple `#D8B4FE` | Purple `#D8B4FE` |
-| **Numbers** | Science `#5EEAD4` | Teal `#0D8A78` | Teal `#5EEAD4` | Teal `#5EEAD4` |
-| **Constants** | Lime `#D4FF00` | Amber `#B45309` | Indigo `#646CFF` | Deep Amber `#FF9A20` |
-| **Tags** | Urgent `#FCA5A5` | Red `#C81E1E` | Red `#FCA5A5` | Red `#FCA5A5` |
-| **Params** | Politics `#FDBA74` | Amber `#B45309` | Amber `#FDBA74` | Deep Amber `#FF9A20` |
+| **Background** | `#1B211A` | `#FCF6F0` | `#14100C` | `#0B0C14` |
+| **Surface** | `#242B23` | `#F5F0E8` | `#1E1812` | `#1A1D2E` |
+| **Border** | `#628141` | `#646260` | `#785834` | `#2A2D3A` |
+| **Accent** | `#EBD5AB` Sand | `#166534` Green | `#FFBA4A` Amber | `#9B8DFF` Purple |
+| **Keywords** | `#EBD5AB` | `#166534` | `#FFBA4A` | `#9B8DFF` |
+| **Functions** | `#8BAE66` | `#1E64B4` | `#93C5FD` | `#93C5FD` |
+| **Strings** | `#4ADE80` | `#15803D` | `#4ADE80` | `#4ADE80` |
+| **Types** | `#D8B4FE` | `#7E3EBE` | `#D8B4FE` | `#D8B4FE` |
+| **Numbers** | `#5EEAD4` | `#0D8A78` | `#5EEAD4` | `#5EEAD4` |
+| **Constants** | `#D4FF00` | `#B45309` | `#FF9A20` | `#646CFF` |
+| **Params** | `#FDBA74` | `#B45309` | `#FF9A20` | `#FDBA74` |
+| **Comments** | `#808080` | `#8A857C` | `#8C7454` | `#BAB9B4` |
 
-Category colors from the design system (finance, environ, tech, urgent, politics, science, culture, sports, health, security) are woven into syntax highlighting for a uniquely editorial feel.
+The Narvo Design System's **semantic category colors** (finance, tech, urgent, politics, science, culture, sports, health, security, environ) are woven into bracket colorization and terminal ANSI colors for a uniquely editorial feel.
 
 ---
 
 ## Design Philosophy
 
-The Narvo Design System follows **Swiss design principles**: sharp edges (`border-radius: 0`), mono-UI typography, 8pt spacing grid, and deliberate structural borders. This theme carries those principles into VS Code — you'll notice crisp tab borders, decisive accent colors, and zero-radius visual language throughout.
+Narvo follows **Swiss design principles**: sharp edges (`border-radius: 0`), mono-UI typography via `JetBrains Mono` and `Space Grotesk`, 8pt spacing grid, and deliberate structural borders. This translates to crisp tab borders, decisive accent colors, and zero-radius visual language throughout the VS Code workbench.
+
+The four themes map to times of day: Nature for the earthy default, Sun for daylight reading, Dusk for warm evening sessions, and Moon for deep night work.
+
+---
+
+## Language Support
+
+Comprehensive syntax highlighting for JavaScript/TypeScript (template literals, JSX components, generics), Python (decorators, self/cls, magic methods), Rust (lifetimes, macros), HTML/CSS (tags, properties, pseudo-classes, units), JSON, and Markdown. Semantic token colorization is enabled for supported languages.
 
 ---
 
 ## Installation
 
+### From the Marketplace
 1. Open **Extensions** (`Ctrl+Shift+X` / `Cmd+Shift+X`)
-2. Search for `Narvo News Theme`
+2. Search for **Narvo News Theme**
 3. Click **Install**
-4. `Ctrl+Shift+P` → `Preferences: Color Theme` → Select **Narvo Nature**, **Narvo Sun**, **Narvo Moon**, or **Narvo Dusk**
+4. `Ctrl+Shift+P` → **Preferences: Color Theme** → select **Narvo Nature**, **Narvo Sun**, **Narvo Dusk**, or **Narvo Moon**
+
+### From VSIX
+```bash
+code --install-extension narvo-news-theme-1.1.0.vsix
+```
+
+Or in VS Code: Extensions sidebar → `⋯` menu → **Install from VSIX...**
 
 ---
 
 ## Recommended Settings
 
-Match the Narvo stack with Space Grotesk + JetBrains Mono:
+Match the Narvo stack:
 
 ```json
 {
@@ -79,11 +93,39 @@ Match the Narvo stack with Space Grotesk + JetBrains Mono:
 
 ---
 
-## License
+## Customization
 
-MIT — See [LICENSE](LICENSE)
+Override any color in your `settings.json`:
+
+```json
+{
+  "workbench.colorCustomizations": {
+    "[Narvo Dusk]": {
+      "editor.background": "#120E0A"
+    }
+  },
+  "editor.tokenColorCustomizations": {
+    "[Narvo Nature]": {
+      "comments": "#6B6B6B"
+    }
+  }
+}
+```
 
 ---
+
+## Contributing
+
+1. Fork and clone the repo
+2. Edit the theme JSON files in `themes/`
+3. Press `F5` in VS Code to launch the Extension Development Host
+4. Test your changes and submit a PR
+
+---
+
+## License
+
+[MIT](LICENSE) — Copyright (c) 2026 AJIBOLA DON_GENIUS
 
 <p align="center">
   <em>Built for <a href="https://github.com/ajibolagenius/narvo_news">Narvo News</a> — The Local Pulse, Refined.</em>
